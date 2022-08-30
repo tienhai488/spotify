@@ -1,0 +1,74 @@
+.play-song {
+    height: 58px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    padding-right: 20px;
+    img {
+        width: 40px;
+        height: 40px;
+    }
+    &:hover {
+        background-color: #282828;
+    }
+    &:hover .icon-play {
+        opacity: 1;
+        color: white;
+    }
+}
+.img-song {
+    position: relative;
+    display: inherit;
+    .icon-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: 0.1s all linear;
+    }
+}
+.play-song:hover span {
+    color: white;
+}
+.play-song:hover img {
+    opacity: 0.3;
+}
+.content {
+    flex: 1;
+    padding: 0 14px;
+    h4 {
+        color: white;
+        user-select: none;
+    }
+    span {
+        font-size: 14px;
+        font-weight: bold;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
+.action {
+    display: flex;
+    align-items: center;
+    p {
+        margin-left: 32px;
+        margin-right: 20px;
+        user-select: none;
+    }
+}
+
+.action-icon {
+    opacity: 0;
+    color: var(--text-color);
+    &:hover {
+        color: white;
+    }
+}
+.play-song:hover .action-icon {
+    opacity: 1;
+}

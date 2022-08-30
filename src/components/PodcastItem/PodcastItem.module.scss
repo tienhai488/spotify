@@ -1,0 +1,23 @@
+.item {
+    width: 218px;
+    height: 218px;
+    display: block;
+    background-color: rgb(39, 133, 106);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    margin: 16px 0;
+}
+.title {
+    color: white;
+    padding: 16px;
+}
+.img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: rotate(25deg) translate(18%, -2%);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+}

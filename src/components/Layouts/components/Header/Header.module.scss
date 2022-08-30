@@ -1,0 +1,94 @@
+.wrapper {
+    width: calc(100% - 241px);
+    height: var(--heigh-footer);
+    padding: 0 32px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.redirect {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #242121e8;
+        color: var(--text-align);
+    }
+    .redirect-btn {
+        width: 22px;
+        height: 22px;
+        cursor: not-allowed;
+    }
+}
+.action {
+    display: flex;
+    align-items: center;
+    .action-btn {
+        color: var(--text-color);
+        font-size: 16px;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        margin: 0 16px;
+        transform: scale(1);
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.1s linear;
+            color: white;
+        }
+        &:last-child {
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: white;
+            color: black;
+            margin-right: 0;
+        }
+    }
+    .seperate {
+        height: calc(var(--heigh-footer) - 40px);
+        width: 1px;
+        background-color: white;
+        margin: 0 20px;
+    }
+}
+
+.search {
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+
+    input {
+        width: 364px;
+        padding: 10px 50px;
+        background-color: transparent;
+        font-size: 16px;
+    }
+}
+.search-btn,
+.close-btn {
+    background-color: transparent;
+    position: absolute;
+    top: 8px;
+}
+.search-btn {
+    left: 11px;
+    cursor: text;
+}
+.close-btn {
+    right: 11px;
+}

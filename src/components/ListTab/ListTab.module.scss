@@ -1,0 +1,14 @@
+.list-tab {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    li {
+        padding: 5px 15px;
+        background-color: #ffffff12;
+        color: white;
+        border-radius: 25px;
+        margin-right: 16px;
+        cursor: pointer;
+        user-select: none;
+    }
+}

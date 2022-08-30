@@ -1,0 +1,31 @@
+.wrapper {
+    width: 100%;
+    height: var(--heigh-footer);
+    background-image: linear-gradient(90deg, #af2896, #509bf5);
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-left: 24px;
+    padding-right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    z-index: 10;
+}
+
+.register {
+    button {
+        cursor: default;
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        transform: scale(1);
+        &:hover {
+            transition: all 0.1s linear;
+            transform: scale(1.1);
+        }
+    }
+}

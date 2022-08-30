@@ -1,0 +1,15 @@
+.wrapper {
+    margin-bottom: 30px;
+}
+.title {
+    display: inline-block;
+    color: white;
+    padding: 20px 0;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.title.noline:hover {
+    text-decoration: none;
+}

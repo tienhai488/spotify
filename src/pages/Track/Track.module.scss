@@ -1,0 +1,115 @@
+.track {
+    height: 58px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    img {
+        width: 40px;
+        height: 40px;
+    }
+    &:hover {
+        background-color: #282828;
+    }
+    &:hover .icon-play {
+        opacity: 1;
+        color: white;
+    }
+}
+.img-song {
+    flex-basis: 5%;
+    position: relative;
+    display: inherit;
+    .icon-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: 0.1s all linear;
+    }
+    p {
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
+.track:hover span {
+    color: white;
+}
+.track:hover .index-num {
+    display: none;
+    transition: 0.3s all linear;
+}
+.index-icon {
+    display: none;
+    transition: 0.3s all linear;
+    color: white;
+}
+.track:hover .index-icon {
+    display: block;
+}
+.content {
+    flex-basis: 45%;
+    text-align: left;
+    h4 {
+        color: white;
+        user-select: none;
+        font-weight: 600;
+    }
+    span {
+        font-size: 14px;
+        font-weight: bold;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
+.action {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    p {
+        margin-left: 32px;
+        margin-right: 32px;
+        user-select: none;
+    }
+}
+
+.action-icon {
+    opacity: 0;
+    color: var(--text-color);
+    &:hover {
+        color: white;
+    }
+}
+.track:hover .action-icon {
+    opacity: 1;
+}
+
+.index {
+    flex-basis: 2.5%;
+    text-align: left;
+    font-weight: 600;
+    position: relative;
+    .index-icon {
+        position: absolute;
+        top: -8px;
+        left: -5px;
+    }
+    .index-num {
+        font-size: 14px;
+    }
+}
+.album {
+    flex-basis: 30%;
+    font-weight: 600;
+    font-size: 14px;
+    span:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
